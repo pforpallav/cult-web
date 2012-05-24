@@ -29,10 +29,10 @@
 
          <br />
 
-         <?php printf(__('%1$s queries in %2$s seconds', 'mystique'), get_num_queries(), timer_stop(0, 2)); ?>
+         <?php /*?><?php printf(__('%1$s queries in %2$s seconds', 'mystique'), get_num_queries(), timer_stop(0, 2)); ?>
 
          <?php if(function_exists('memory_get_usage')) echo '('.number_format(memory_get_usage()/1024/1024, 2).'M)'; ?>                 
-
+<?php */?>
        </div>
 
      </div>
