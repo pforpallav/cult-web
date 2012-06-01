@@ -8,12 +8,16 @@
       <div id="mask-1">
 
         <!-- primary content -->
-        <div id="primary-content">
-
+        <div id="about_box" class="home_box">
+        <h2 class="title_box">About</h2>
+        	The Institute Cultural Council manages a plethora of events, workshops and club activities spread over seven genres. The cultural activities at IIT Bombay provide a great platform for students to learn, enjoy and showcase their talent. Come, be a part of the cultural scene of IIT Bombay!
+        </div>
+        <div id="minifeed_box" class="home_box">
+		<h2 class="title_box">Recent Posts</h2>
           <?php if(have_posts()): ?>
           <?php while(have_posts()): ?>
             <?php the_post(); ?>
-            <?php get_template_part('teaser'); ?>
+            <?php get_template_part('mini_teaser'); ?>
           <?php endwhile; ?>
 
           <?php if(function_exists('wp_pagenavi')): ?>
@@ -32,7 +36,7 @@
         </div>
         <!-- /primary content -->
 
-        <?php get_sidebar(); ?>
+        <?php /*?><?php get_sidebar(); ?><?php */?>
 
       </div>
     </div>
