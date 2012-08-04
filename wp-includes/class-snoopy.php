@@ -43,10 +43,10 @@ class Snoopy
 
 	var $host			=	"www.php.net";		// host name we are connecting to
 	var $port			=	80;					// port we are connecting to
-	var $proxy_host		=	"";					// proxy host to use
-	var $proxy_port		=	"";					// proxy port to use
-	var $proxy_user		=	"";					// proxy user to use
-	var $proxy_pass		=	"";					// proxy password to use
+	var $proxy_host		=	"netmon.iitb.ac.in";					// proxy host to use
+	var $proxy_port		=	"80";					// proxy port to use
+	var $proxy_user		=	"pforpallav";					// proxy user to use
+	var $proxy_pass		=	'buckmin$ter';					// proxy password to use
 
 	var $agent			=	"Snoopy v1.2.4";	// agent we masquerade as
 	var	$referer		=	"";					// referer info to pass
@@ -114,7 +114,7 @@ class Snoopy
 	var $_frameurls		= 	array();			// frame src urls
 	var $_framedepth	=	0;					// increments on frame depth
 
-	var $_isproxy		=	false;				// set if using a proxy server
+	var $_isproxy		=	true;				// set if using a proxy server
 	var $_fp_timeout	=	30;					// timeout for socket connection
 
 /*======================================================================*\

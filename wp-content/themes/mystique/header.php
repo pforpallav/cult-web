@@ -37,7 +37,7 @@
       <div class="page-content">
         <div id="site-title" class="clear-block">
           <span>
-          	<a href="<?php echo get_option('home'); ?>/"><img src="wp-content/themes/mystique/images/title.png" height="75px" alt="<?php bloginfo('description'); ?>" /></a>
+          	<a href="<?php echo get_option('home'); ?>/"><img src="http://10.3.113.29/wordpress/wp-content/uploads/2012/06/title.png" height="75px" alt="<?php bloginfo('description'); ?>" style="width:auto"/></a>
           </span>
 		  <?php /*?><?php if(get_bloginfo('description')): ?><div class="headline"><?php bloginfo('description'); ?></div><?php endif; ?><?php */?>
         </div>
@@ -49,6 +49,16 @@
            wp_nav_menu(array(
              'menu_class'     => 'menu fadeThis clear-block',
              'theme_location' => 'primary',
+             'fallback_cb'    => 'mystique_page_menu',       // default menu
+             'link_after'     => '<span class="p"></span>',  // pointer arrow on 1st level
+           ));
+          ?>
+        </div>
+        <div class="shadow-right nav nav-main">
+          <?php
+           wp_nav_menu(array(
+             'menu_class'     => 'menu fadeThis clear-block nav-genres',
+             'menu'           => 'secondory_menu',
              'fallback_cb'    => 'mystique_page_menu',       // default menu
              'link_after'     => '<span class="p"></span>',  // pointer arrow on 1st level
            ));

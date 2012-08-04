@@ -25,7 +25,7 @@
 
          &copy; <?php the_date('Y'); ?> |
 
-         <?php printf(__('Powered by %1$s and %2$s theme by %3$s', 'mystique'), '<a href="http://wordpress.org/">WordPress</a>', 'Mystique', '<a href="http://digitalnature.eu/themes/mystique/">digitalnature</a>'); ?>
+         <?php printf(__('Powered by %1$s and %2$s theme by %3$s modified by %4$s', 'mystique'), '<a href="http://wordpress.org/">WordPress</a>', 'Mystique', '<a href="http://digitalnature.eu/themes/mystique/">digitalnature</a>', '<a href="www.cse.iitb.ac.in/~pforpallav">Kumar Pallav</a>'); ?>
 
          <br />
 
